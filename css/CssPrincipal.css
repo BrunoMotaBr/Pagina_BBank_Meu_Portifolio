@@ -1,0 +1,101 @@
+.conteudo--principal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    padding: 2em;
+    height: 100vh;
+}
+.conteudo--principal--titulo{
+    color: var(--branco);
+    margin: 0em 0em 1em 0em;
+    font-weight: 700;
+}
+.conteudo--principal--texto{
+    color: var(--texto);
+}
+.mini-imagens{
+    display: flex;
+    margin: 1em 0em 2em 0em;
+    justify-content: center;
+}
+.conteudo--principal-mini-imagens{
+    width: 25px;
+}
+.conteudo--principal--botao--principal{
+    display: block;
+    margin: 1em 0;
+    padding: 10px;
+    color: var(--cor--pagina);
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: var(--cor--botao);
+    margin: 0.5em 1em
+}
+.conteudo--principal--botao--principa:active{
+    background-color:var(--cor--botao--secundaria);
+}
+.conteudo--principal--botao--secundario{
+    color: var(--texto);
+    background-color: transparent;
+    border: solid var(--texto) 1px;
+}
+.conteudo--principal--botao--secundario:active{
+    background-color: var(--cor--botao);
+}
+.conteudo--principal--video{
+    width: 80%;
+    border: solid white 2px;
+    padding: 0.5em;
+    margin: auto;
+    margin-top: 1em;
+}
+.imagem{
+    width: 80%;
+    margin: 1em;
+}
+.conteudo--secundario{
+    height: 70vh;
+    padding: 1em;
+    margin-bottom: 2.5em;
+}
+
+.conteudo--secundario--imagem{
+    display: flex;
+    justify-content: center;
+}
+.conteudo--secundario--label{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (min-width: 700px) {
+    .conteudo--principal{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        padding: 0em 5em;
+    }
+    .conteudo--principal-mini-imagens{
+        width: 50px;
+    }
+    .conteudo--principal--video{
+        width: 100%;
+        height: 300px;
+        margin-left:1em;
+    }
+    .conteudo--secundario{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 2em;
+    }
+    .conteudo--secundario--slide{
+        margin-left: 2em;
+    }
+    .conteudo--principal--titulo{
+        font-size: 30px;
+    }
+    .conteudo--principal--texto{
+        font-size: 22px
+    }
+}

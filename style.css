@@ -1,0 +1,26 @@
+@import url("/css/CssPrincipal.css");
+@import url("/css/cabecalho.css");
+@import url("/css/conteudo_bb.css");
+@import url("/css/rodapeBB.css");
+@import url("/css/slides_bb.css");
+@import url("/css/slides.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor--pagina: #1f0224;
+    --branco: #FFFFFF;
+    --texto: #a7a6a6;
+    --cor--botao: #7160de;
+    --preto: #000000;
+    --roxo--escuro: #221d45;
+    --dourado: #ffd700;
+}
+body{
+    background-color: var(--cor--pagina);
+    font-size: 16px;
+    text-align: center;
+    transition: 1s;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Banco Digital</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="https://pagina-inicial-meu-portifolio.vercel.app"><img class="cabecalho__logo" src="/imgs/Logo.png"></a>
+        <img class="cabecalho__menu" id="menu" src="/imgs/menu_haburguer.png">
+        <ul class="cabecalho__lista" id="lista">
+            <li>
+                <a href="https://pagina-inicial-meu-portifolio.vercel.app" class="cabecalho__lista-link">Home</a>
+            </li>
+            <li>
+                <a class="cabecalho__lista-link" href="https://www.linkedin.com/in/bruno-mota-970057192/">Linkedin</a>
+            </li>
+            <li>
+                <a class="cabecalho__lista-link" href="https://github.com/BrunoMotaBr">Git Hub</a>
+            </li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="slides slides-class">
+            <h1 class="titulo-slide">Classes Do Projeto</h1>
+            <img class="slide ativo" src="imgs/Imagem 1 slide.png"alt="Imagem 1 Slider">
+            <h3 class="slide-texto ativo-texto">Cls_Uteis Realiza algumas validações</h3>
+            <img class="slide" src="imgs/Imagem 2 slide.png" alt="Imagem 2 Slider">
+            <h3 class="slide-texto">Cls_Funcionarios Cadastra e valida novos funcionarios</h3>
+            <img class="slide" src="imgs/Imagem 3 slide.png" alt="Imagem 3 Slider">
+            <h3 class="slide-texto">Cls_Cliente Transforma em cliente em objeto manipulavel pelo sistema</h3>
+            <img class="slide" src="imgs/Imagem 4 slide.png" alt="Imagem 4 Slider">
+            <h3 class="slide-texto">FicharioDB realiza interação com o Banco de Dados</h3>
+            <img class="slide" src="imgs/Imagem 5 slide.png" alt="Imagem 5 Slider">
+            <h3 class="slide-texto">Cls_SQLserver cria e testa conexão com Banco de dados</h3>
+            <img class="slide" src="imgs/Imagem 6 slide.png" alt="Imagem 5 Slider">
+            <h3 class="slide-texto">CEP transforma um Json em classe C#</h3>
+        </div>
+    </section>
+
+    <section class="conteudo--principal conteudo--secundario conteudoBB">
+        <div class= "conteudo--secundario--imagem">
+            <img class= "imagem" src="imgs/TelaInicial.png" alt="Imagem tela inicial Bbank">
+        </div>
+        <div class="conteudo--secundario--infos">
+            <h2 class="conteudo--principal--titulo">Tela Inicial</h2>
+            <p class="conteudo--principal--texto">Após o login essa tela aparecera, nela o usuario tera acesso.<br>
+                <strong>Cadastro cliente: </strong>Cadatrar novos clientes e gerando uma nova conta.<br>
+                <strong>Buscar clientes: </strong>Acesso a clientes já cadastrados no banco de dados.<br>
+                <strong>Simular emprestimos: </strong>Simulação de emprestimos para compra de casas ou carros.
+            </p>
+        </div>
+    </section>
+
+    <section class="conteudo--principal conteudo--secundario"conteudoBB>
+        <div class="conteudo--secundario--infos">
+            <h2 class="conteudo--principal--titulo">Tela Cadastro</h2>
+            <p class="conteudo--principal--texto">
+                Nesta tela todos os campos devem ser preechidos para que este cliente seja valido,
+                somente a agencia e conta serão preechidos automaticamente, com base em clientes já existentes.
+                CPF é validado de forma imediata após ser preenchido e seu feedback é dado ao lado.
+                Dentro do elemento endereço temos duas opções para preecher.<br><strong>1ª</strong> Atraves do cep o sistema auto completa Rua, 
+                Cidade, Bairro e UF(Unidade Federativa)<br><strong>2ª</strong> Preenchimento manual de todas as informações.          
+            </p>
+        </div>
+        <div class= "conteudo--secundario--imagem">
+            <img class="imagem" src="imgs/TelaCadastro.png" alt="Imagem tela Cadastro Bbank">
+        </div>
+    </section>
+
+    <section class="conteudo--principal conteudo--secundario"conteudoBB>
+        <div class= "conteudo--secundario--imagem">
+            <img class="imagem" src="imgs/TelaPesquisa.png" alt="Imagem tela inicial Bbank">
+        </div>
+        <div class="conteudo--secundario--infos">
+            <h2 class="conteudo--principal--titulo">Tela pesquisa clientes</h2>
+            <p class="conteudo--principal--texto">Neste sistema existem duas maneiras de pesquisa de clientes. A primeira atraves
+                do CPF do mesmo, a segunda atraves de uma lista com todos os clientes da base
+                ordenados em ordem alfabetica. 
+            </p>
+        </div>
+    </section>
+
+    <section class="conteudo--principal conteudo--secundario"conteudoBB>
+        <div class="conteudo--secundario--infos">
+            <h2 class="conteudo--principal--titulo">Tela cliente</h2>
+            <p class="conteudo--principal--texto">É possivel nesta tela alterar todos os dados mutaveis do cliente,
+                como nome, telefone e endereço mas não é possivel alteração em cpf 
+                e data de nascimento por exemplo pois são dados que não se alteram.
+                Além destas alterações é possivel excluir o cliente do banco de dados.
+            </p>
+        </div>
+        <div class= "conteudo--secundario--imagem">
+            <img class="imagem" src="imgs/TelaCliente.png" alt="Imagem tela inicial Bbank">
+        </div>
+    </section>
+
+    <section class="conteudo--principal conteudo--secundario"conteudoBB>
+        <div class= "conteudo--secundario--imagem imagem-telaini">
+            <img class= "imagem" src="imgs/TelaSimulacao.png" alt="Imagem tela inicial Bbank">
+        </div>
+        <div>
+            <h2 class="conteudo--principal--titulo">Tela Simulação</h2>
+            <p class="conteudo--principal--texto">Nesta tela é realizada uma simulação calculando o salario que foi informado no cadastro,
+                é realizada em pró de não comprometer 25% da renda mensal deste cliente e o feedback é mostrado,
+                de forma instantanea <br><strong>obs: clientes sem cadastro não são aprovados.</strong>
+            </p>
+        </div>
+    </section>
+
+
+    <footer class="rodape-BB">
+        <div>
+            <h2 class="rodape-BB_texto">Bruno Mota</h2>
+            <img class="rodape-BB_logo" src="imgs/Logo.png">
+        </div>
+        <ul class="rodapeBB_lista">
+            <h2 class="rodape-BB_texto">Contato</h2>
+            <li><a class="rodapeBB_link" href="https://github.com/BrunoMotaBr?tab=repositories"><img src="imgs/logotipo-do-github.png">Git hub</a></li>
+            <li><a class="rodapeBB_link" href="https://www.linkedin.com/in/bruno-mota-970057192/"><img src="imgs/linkedin.png">Linkedin</a></li>
+            <li><a class="rodapeBB_link" href="https://api.whatsapp.com/send/?phone=5511940350891&text&type=phone_number&app_absent=0"><img src="imgs/whatsapp.png">Whatsapp</a></li>
+        </ul>
+        <ul class="rodapeBB_lista">
+            <h2 class="rodape-BB_texto">Projetos publicados</h2>
+            <li><a class="rodapeBB_link" href="https://alura-book-responsivo.vercel.app">Alura Book</a></li>
+            <li><a class="rodapeBB_link" href="https://alura-book-theta.vercel.app">Acesso a APIs</a></li>
+            <li><a class="rodapeBB_link" href="https://alura-plus-psi-rosy.vercel.app">Alura +</a></li>
+            <li><a class="rodapeBB_link" href="https://alura-midi-murex.vercel.app">Alura midi</a></li>
+            <li><a class="rodapeBB_link" href="https://robotron-tan.vercel.app">Robotron</a></li>
+            <li><a class="rodapeBB_link" href="https://mochila-de-viagem-smoky.vercel.app">Mochila de Viagem</a></li>
+        </ul>
+        <ul class="rodapeBB_lista">
+            <h2 class="rodape-BB_texto">Outros</h2>
+            <li><a class="rodapeBB_link" href="https://github.com/BrunoMotaBr/JavaScript_BackEnd">Node.js</a></li>
+            <li><a class="rodapeBB_link" href="https://github.com/BrunoMotaBr/Sistema-de-cadastro-de-pacientes-Covid-Positivo">C++</a></li>
+            <li><a class="rodapeBB_link" href="https://github.com/BrunoMotaBr/Python">Python</a></li>
+            <li><a class="rodapeBB_link" href="https://github.com/BrunoMotaBr/PHP">PHP</a></li>
+            <li><a class="rodapeBB_link" href="https://github.com/BrunoMotaBr/Livro_de_receitas">Django</a></li>
+        </ul>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

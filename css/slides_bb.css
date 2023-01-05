@@ -1,0 +1,20 @@
+.slide-texto{
+    background-color: var(--preto);
+    border-radius: 16px;
+    font-size: 18px;
+    color: var(--branco);
+    border: solid 1px var(--preto);
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+}
+.ativo-texto{
+    display: block;
+}
+.slides-class{
+    width: 80%;
+    margin: 3em auto 0 auto;
+}
+.titulo-slide{
+    color: var(--branco);
+}
